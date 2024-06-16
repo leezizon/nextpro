@@ -5,7 +5,7 @@ export default function RootLayout({
 }) {
   return (
     <div>
-        &copy;Mest is
+        &copy;Mmmmmmmmmmmmmmmmmmmmmmmmmest is
         {children}
     </div>
   )
