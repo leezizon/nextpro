@@ -3,11 +3,16 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import styles from "../styles/navigation.module.css"
+import AuthSession from '../components/providers/session-provider'
+import GetUser from "../components/user-info";
 
 export default function Navigation(){
     const path = usePathname();
     return(
         <nav className={styles.nav}>
+            <AuthSession>
+                <GetUser></GetUser>
+            </AuthSession>
             <ul>
                 <li>
                     <Link href="/">Home</Link>{path ==='/'?"★":""}
