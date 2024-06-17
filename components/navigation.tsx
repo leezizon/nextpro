@@ -13,6 +13,7 @@ export default function Navigation(){
             <AuthSession>
                 <GetUser></GetUser>
             </AuthSession>
+            <div>asdsasss????</div>
             <ul>
                 <li>
                     <Link href="/">Home</Link>{path ==='/'?"★":""}
