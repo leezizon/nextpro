@@ -1,4 +1,29 @@
-.nav{
+/* 상단 네비게이션 바 스타일 */
+.navbar {
+    width: 100%;
+    background-color: #270035;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .navbar div {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  .navbar div:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+/* .nav{
     background-color: #2d2d2d;
     position: fixed;
     width: 30%;
@@ -25,5 +50,5 @@
     
     .nav ul li:hover {
     transform: scale(1.05);
-    }
+    } */
     

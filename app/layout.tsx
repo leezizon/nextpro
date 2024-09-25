@@ -1,6 +1,7 @@
 import "../styles/global.css"
 import { Metadata } from "next"
 import Navigation from "../components/navigation"
+import Sidebar from "../components/sidebar"
 
 export const metadata: Metadata = {
   title: {
@@ -19,6 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navigation />
+        <Sidebar />
         {children}
       </body>
     </html>

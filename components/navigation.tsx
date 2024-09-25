@@ -8,26 +8,46 @@ import GetUser from "../components/user-info";
 
 export default function Navigation(){
     const path = usePathname();
+    console.log(GetUser);
     return(
-        <nav className={styles.nav}>
+        <div className={styles.navbar}>
             <AuthSession>
                 <GetUser></GetUser>
             </AuthSession>
-            <div>asdsasss????</div>
-            <ul>
-                <li>
+                <div>
                     <Link href="/">Home</Link>{path ==='/'?"★":""}
-                </li>
-                <li>
+                </div>
+                <div>
                     <Link href="/about-us">About-Us</Link>{path ==='/about-us'?"★":""}
-                </li>
-                <li>
+                </div>
+                <div>
                     <Link href="/login">login</Link>{path ==='/login'?"★":""}
-                </li>
-                <li>
+                </div>
+                <div>
                     <Link href="/admin">admin</Link>{path ==='/admin'?"★":""}
-                </li>
-            </ul>
-        </nav>
+                </div>
+                <div>
+                    <Link href="/store">store</Link>{path ==='/store'?"★":""}
+                </div>
+        </div>
+        // <nav className={styles.nav}>
+        //     <AuthSession>
+        //         <GetUser></GetUser>
+        //     </AuthSession>
+        //     <ul>
+        //         <li>
+        //             <Link href="/">Home</Link>{path ==='/'?"★":""}
+        //         </li>
+        //         <li>
+        //             <Link href="/about-us">About-Us</Link>{path ==='/about-us'?"★":""}
+        //         </li>
+        //         <li>
+        //             <Link href="/login">login</Link>{path ==='/login'?"★":""}
+        //         </li>
+        //         <li>
+        //             <Link href="/admin">admin</Link>{path ==='/admin'?"★":""}
+        //         </li>
+        //     </ul>
+        // </nav>
     )
 }
