@@ -23,9 +23,9 @@ export default function Navigation(){
                 <div>
                     <Link href="/admin">admin</Link>{path ==='/admin'?"★":""}
                 </div>
-                <div>
+                {/* <div>
                     <Link href="/store">store</Link>{path ==='/store'?"★":""}
-                </div>
+                </div> */}
             </div>
             <div>
                 <div className={styles.searchBar}>
