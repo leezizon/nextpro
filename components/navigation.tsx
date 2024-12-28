@@ -8,12 +8,9 @@ import GetUser from "../components/user-info";
 
 export default function Navigation(){
     const path = usePathname();
-    console.log(GetUser);
     return(
-        <div className={styles.navbar}>
-            <AuthSession>
-                <GetUser></GetUser>
-            </AuthSession>
+        <div>
+            <div className={styles.navbar}>
                 <div>
                     <Link href="/">Home</Link>{path ==='/'?"★":""}
                 </div>
@@ -29,6 +26,16 @@ export default function Navigation(){
                 <div>
                     <Link href="/store">store</Link>{path ==='/store'?"★":""}
                 </div>
+            </div>
+            <div>
+                <div className={styles.searchBar}>
+                    <input type="text" placeholder="검색어를 입력하세요..." />
+                    <button>검색</button>
+                </div>
+                <AuthSession>
+                    <div className={styles.userName}><GetUser></GetUser></div>
+                </AuthSession>
+            </div>
         </div>
         // <nav className={styles.nav}>
         //     <AuthSession>

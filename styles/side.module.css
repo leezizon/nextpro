@@ -1,14 +1,14 @@
 /* 왼쪽 사이드 바 스타일 */
-.sidebar {
+/* .sidebar {
   border-radius: 10px;
-  height: 80vh; /* 화면 높이에 맞춤 */
+  height: 80vh;
   width: 300px;
     position: fixed;
-    top: 80px; /* 네비게이션 바 아래에 위치 */
+    top: 80px; 
     left: 150px;
     background-color: #270035;
     padding-top: 20px;
-    z-index: 999; /* 네비게이션 바보다 뒤에 위치 */
+    z-index: 999; 
   }
   
 .sidebar div {
@@ -16,7 +16,7 @@
   width: 250px;
   height: 350px;
   border-radius: 10px;
-  border:5px solid  #fff7ff;;  /*단색 일때 이렇게 함축해서 넣어도 됩니다.*/
+  border:5px solid  #fff7ff;
   }
 
   .sidebar a {
@@ -29,12 +29,12 @@
   
   .sidebar a:hover {
     background-color: #575757;
-  }
+  } */
 
   /* 반응형 스타일 */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .sidebar {
-      display: none; /* 작은 화면에서 사이드바 숨기기 */
+      display: none; 
     }
   
     .main-content {
@@ -57,4 +57,4 @@
     .main-content {
       padding: 10px;
     }
-  }
+  } */
